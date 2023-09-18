@@ -1,0 +1,144 @@
+
+
+
+.footer{
+    background-color: black;
+    color: white;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    
+}
+p{
+    padding: 5px;
+}
+
+body{
+    background-image: url('../IMG/achtergrond.jpg');
+
+    font-family: sans-serif;
+    font-size: 16px;
+    text-align: justify;
+
+}
+
+#container{
+    /* De html-tag met id container mag een maximale breedte hebben van 1 200 px. */
+    max-width: 1200px;
+    margin: 0px auto;
+    background-color: white;
+    overflow: hidden;
+}
+
+header img{
+    margin: 0px auto;
+    display: block;
+}
+nav{
+    margin-top:10px;
+    border-bottom: 1px gray solid;
+    overflow: hidden;
+}
+.item{
+    /*Elk item in de navigatie krijgt een puntgrootte van 21 px.*/
+    font-size: 21px;
+    border: black 1px solid;
+    border-radius: 5px 5px 0px 0px;
+    float:left;
+    padding: 5px 15px 5px 15px;
+    margin: 0px 2px
+}
+
+.item1{
+    /*Elk item in de navigatie krijgt een puntgrootte van 21 px.*/
+    font-size: 21px;
+    border: black 1px solid;
+    border-radius: 5px 5px 0px 0px;
+    
+    padding: 5px 15px 5px 15px;
+    margin:0px 2px
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+nav a:hover{
+    background-color: black;
+    color: white;
+    transition-duration: 0.5;
+}
+main {
+    width: 75%;
+    float: right;
+}
+aside{
+    width:25%;
+}
+
+aside h1, main h2{
+    text-align: center;
+    color:brown;
+    font-size: 28px;
+    
+}
+aside p, aside table{
+    background-color:burlywood;
+    text-align: center;
+    padding: 8px 5px;
+    display: block;
+    margin: 5px;
+}
+.lastminute{
+    padding: 15px 20px 5px 5px;
+    border-bottom:grey 1px solid;
+    overflow: hidden;
+}
+.lastminute:hover{
+    background-color:rgb(245,240,255);
+    box-shadow: 0px 2px 5px 2px;
+    transition-duration: 0.2s;
+}
+.hotelnaam, .periode, .vertrek, .optie, .prijs{
+    float:left;
+}
+
+.hotelnaam{
+    width:25%;
+}
+.vertrek, .optie{
+    width:10%;
+    margin: 0px 5px;
+}
+
+.prijs{
+    width:10%;
+    text-align: right;
+    font-weight:bold;
+}
+.optie{
+    width:25%
+}
+#clear{
+    clear: both;
+}
+footer{
+    background-color: black;
+    color: white;
+    padding: 6px;
+    /*regelafstand*/
+    line-height: 20px;
+    font-size:14px;
+    text-align:center;
+}
+@media(max-width:900px){
+    aside,main{
+        float:none;
+        width:100%;
+    }
+}
+@media(max-width:600px){
+    .hotelnaam, .periode, .vertrek, .optie, .prijs{
+        float:none;
+        width:100%;
+    }
+    
+}
